@@ -1,0 +1,22 @@
+[
+  {
+    "user": "reset-db.js set this prop",
+    "name": "mi primer sitio con mongodb 🥲",
+    "address": "mayor, 41",
+    "state": "reset-db.js set this prop",
+    "province": "28",
+    "locality": "28001",
+    "place_option": "reset-db.js set this prop",
+    "place_option_type": "reset-db.js set this prop"
+  },
+  {
+    "user": "reset-db.js set this prop",
+    "name": "mi primer segundo sitio con mongodb 🥲🥲",
+    "address": "mayor, 96",
+    "state": "reset-db.js set this prop",
+    "province": "28",
+    "locality": "28001",
+    "place_option": "reset-db.js set this prop",
+    "place_option_type": "reset-db.js set this prop"
+  }
+]

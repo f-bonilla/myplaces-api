@@ -1,0 +1,5 @@
+{
+  "setupFiles": ["./jest.setup.js"],
+  "testEnvironment": "node",
+  "maxConcurrency": 1
+}

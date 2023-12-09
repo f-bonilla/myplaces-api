@@ -1,0 +1,5 @@
+se pueden servir archivos estativos de la siguiente manera:
+app.use('/assets', express.static('assets'));
+
+res.json, su nombre lo dice todo
+res.send, puede enviar texto plano, html, imagenes, pdf, buffer...

@@ -1,0 +1,17 @@
+config:
+  target: "http://127.0.0.1:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 17 # 1000 usuarios por minuto (1000 / 60 = 16.67 (hay que redondear) llegadas por segundo)
+scenarios:
+  - name: "Login"
+    flow:
+      - post:
+          url: "/auth/login"
+          json:
+            email: "user@domain.com"
+            password: "asdf"
+  - name: "Get places"
+    flow:
+      - get:
+          url: "/places"

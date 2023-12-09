@@ -1,0 +1,76 @@
+{
+  "states": {
+    "200": {
+      "name": "Success",
+      "message": "Solicitud correcta"
+    },
+    "201": {
+      "name": "Created",
+      "message": "Se ha creado un nuevo recurso"
+    },
+    "304": {
+      "name": "NotModified",
+      "message": "Recurso sin modificaciones"
+    },
+    "400": {
+      "name": "BadRequest",
+      "message": "Solicitud Incorrecta"
+    },
+    "401": {
+      "name": "Unauthorized",
+      "message": "Credenciales inválidas"
+    },
+    "403": {
+      "name": "Forbidden",
+      "message": "Acceso denegado"
+    },
+    "404": {
+      "name": "NotFound",
+      "message": "Recurso no encontrado"
+    },
+    "500": {
+      "name": "InternalServerError",
+      "message": "Error interno"
+    },
+    "503": {
+      "name": "ServiceUnavailable",
+      "message": "Servicio no disponible"
+    }
+  },
+  "acc_load_error": "No se pueden cargar los datos ACL",
+  "mailing": {
+    "mailing_ok": "Email enviado",
+    "mailing_ko": "Hubo un error enviando el email",
+    "views": {
+      "default": {
+        "subject": "Asunto por defecto",
+        "message": "Mensaje por defecto"
+      },
+      "welcome": {
+        "subject": "¡Bienvenido!",
+        "head_content": "¡Estamos emocionados de tenerte como parte de nuestra comunidad! Tu cuenta ha sido creada con éxito.",
+        "body_content": "Para validar tu dirección, por favor haz click <a href='%s' target='_blank'>aquí</a>.",
+        "contact_content": "Si tienes alguna pregunta o necesitas asistencia, no dudes en ponerte en contacto con nosotros.",
+        "goodbye_content": "Gracias por unirte a nosotros. ¡Esperamos que disfrutes de nuestra plataforma!"
+      }
+    },
+    "verified_email": "Correo electrónico validado"
+  },
+  "additional_data": {
+    "invalid_key": "La clave '%s' no es una clave de respuesta válida"
+  },
+  "language_change": "Se ha cambiado el idioma correctamente",
+  "logged": "Inicio de sesión correcto",
+  "server": "Servidor:",
+  "database": "BD:",
+  "invalid_value": "Valor inválido",
+  "invalid_id": "'%s' no es un ObjectId válido",
+  "invalid_email": "'%s' no es una dirección de email válida",
+  "specific_duplicate_field": "Ya existe un registro con el mismo valor en el índice %s en los campos: %s",
+  "generic_duplicate_field": "Valor duplicado",
+  "current_language": "Idioma actual",
+  "server_not_started": "No se ha podido iniciar el servidor",
+  "resource_not_found": "No se ha podido encontrar el recurso %s",
+  "updated_resource": "El recurso se ha actualizado correctamente",
+  "deleted_resource": "El recurso % se ha eliminado correctamente"
+}

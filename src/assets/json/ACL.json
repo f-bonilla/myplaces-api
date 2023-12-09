@@ -1,0 +1,41 @@
+{
+  "/auth/login": {
+    "post": ["guest"]
+  },
+  "/auth/register": {
+    "post": ["guest"]
+  },
+  "/auth/logout": {
+    "post": ["user"]
+  },
+  "/auth/confirm-user": {
+    "get": ["guest"]
+  },
+  "/users": {
+    "get": ["admin"],
+    "post": ["admin"]
+  },
+  "/users/:id": {
+    "get": ["user", "admin"],
+    "patch": ["user", "admin"],
+    "delete": ["user", "admin"]
+  },
+  "/places": {
+    "get": ["guest", "user"],
+    "post": ["user"]
+  },
+  "/places/:id": {
+    "get": ["guest", "user", "admin"],
+    "patch": ["user", "admin"],
+    "delete": ["user", "admin"]
+  },
+  "/place-options": {
+    "get": ["guest", "user"]
+  },
+  "/place-option-types": {
+    "get": ["guest", "user"]
+  },
+  "/place-states": {
+    "get": ["guest", "user"]
+  }
+}

@@ -1,0 +1,5 @@
+se usan para guardar info del usuario en el servidor, si esto no hace falta se puede prescindir de ellas
+en una api restfull stateless no se usan como metodo de autenticacion, para eso estan los tokens
+
+en un middleware express se propaga con el objeto req:
+req.session.userEmail = "name@domain.com";

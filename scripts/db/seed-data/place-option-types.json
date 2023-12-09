@@ -1,0 +1,70 @@
+[
+  {
+    "key": "hotel",
+    "value": "10001"
+  },
+  {
+    "key": "camping",
+    "value": "10002"
+  },
+  {
+    "key": "ruralHouse",
+    "value": "10003"
+  },
+  {
+    "key": "hostel",
+    "value": "10004"
+  },
+  {
+    "key": "restaurant",
+    "value": "20001"
+  },
+  {
+    "key": "pizzeria",
+    "value": "20002"
+  },
+  {
+    "key": "burguer",
+    "value": "20003"
+  },
+  {
+    "key": "pub",
+    "value": "20004"
+  },
+  {
+    "value": "30001",
+    "key": "streetMarket"
+  },
+  {
+    "value": "30002",
+    "key": "localFestivals"
+  },
+  {
+    "value": "30003",
+    "key": "music"
+  },
+  {
+    "value": "30004",
+    "key": "localFairs"
+  },
+  {
+    "value": "40001",
+    "key": "swimmingAreas"
+  },
+  {
+    "value": "40002",
+    "key": "outdoorActivities"
+  },
+  {
+    "value": "40003",
+    "key": "wineries"
+  },
+  {
+    "value": "40004",
+    "key": "historicSites"
+  },
+  {
+    "value": "40005",
+    "key": "museums"
+  }
+]

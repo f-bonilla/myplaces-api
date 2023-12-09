@@ -1,0 +1,18 @@
+[
+  {
+    "key": "rest",
+    "value": "10"
+  },
+  {
+    "key": "bar",
+    "value": "20"
+  },
+  {
+    "key": "events",
+    "value": "30"
+  },
+  {
+    "key": "attractions",
+    "value": "40"
+  }
+]

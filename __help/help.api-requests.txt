@@ -1,0 +1,34 @@
+POST /auth/login
+POST /auth/register
+POST /auth/logout
+
+GET /users
+GET /users/:id
+POST /users
+PUT /users/:id
+PATCH /users/:id
+DELETE /users/:id
+
+GET /places
+GET /places/:id
+POST /places
+PUT /places/:id
+PATCH /places/:id
+DELETE /places/:id
+
+"id": "652e402ccf5bfdee77fce8c9",
+"email": "guest@domain.com",
+"role": "guest"
+
+"id": "652e402ccf5bfdee77fce8ca",
+"email": "user@domain.com",
+"role": "user"
+
+"id": "652e402ccf5bfdee77fce8cb",
+"email": "admin@domain.com",
+"role": "admin"
+
+"id": "652e402ccf5bfdee77fce8cc",
+"email": "superuser@domain.com",
+"role": "superuser"
+

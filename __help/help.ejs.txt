@@ -1,0 +1,4 @@
+añade el texto tal cual
+<p><%= headContent %></p>
+si hay contenido html lo representa
+<p><%- bodyContent %></p>

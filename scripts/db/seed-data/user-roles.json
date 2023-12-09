@@ -1,0 +1,14 @@
+[
+  {
+    "key": "guest"
+  },
+  {
+    "key": "user"
+  },
+  {
+    "key": "admin"
+  },
+  {
+    "key": "superuser"
+  }
+]

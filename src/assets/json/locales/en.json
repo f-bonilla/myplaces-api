@@ -1,0 +1,56 @@
+{
+  "states": {
+    "200": {
+      "name": "Success",
+      "message": "Request successful"
+    },
+    "201": {
+      "name": "Created",
+      "message": "A new resource has been created"
+    },
+    "304": {
+      "name": "NotModified",
+      "message": "Resource not modified"
+    },
+    "400": {
+      "name": "BadRequest",
+      "message": "Incorrect request"
+    },
+    "401": {
+      "name": "Unauthorized",
+      "message": "Invalid credentials"
+    },
+    "403": {
+      "name": "Forbidden",
+      "message": "Access denied"
+    },
+    "404": {
+      "name": "NotFound",
+      "message": "Resource not found"
+    },
+    "500": {
+      "name": "InternalServerError",
+      "message": "Internal error"
+    },
+    "503": {
+      "name": "ServiceUnavailable",
+      "message": "Service unavailable"
+    }
+  },
+  "acc_load_error": "Unable to load ACL data",
+  "mailing_ko": "There was an error connecting to the mailing server",
+  "language_change": "Language changed successfully",
+  "logged": "Successful login",
+  "server": "Server:",
+  "database": "DB:",
+  "invalid_value": "Invalid value",
+  "invalid_id": "'%s' is not a valid ObjectId",
+  "invalid_email": "'%s' is not a valid email address",
+  "specific_duplicate_field": "A record with the same value already exists in the %s index in the following fields: %s",
+  "generic_duplicate_field": "Duplicate value",
+  "current_language": "Current language",
+  "server_not_started": "Unable to start server",
+  "resource_not_found": "Could not find resource %s",
+  "updated_resource": "Resource %s updated successfully",
+  "deleted_resource": "Resource %s deleted successfully"
+}
