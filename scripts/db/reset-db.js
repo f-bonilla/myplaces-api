@@ -57,7 +57,7 @@ const init = async () => {
     await PlaceOptionTypeModel.createIndexes();
     await PlaceModel.createIndexes();
     // TODO: ver si da igual guardar todo el objeto o solo el id...aclarar como funciona esto, lo mismo es lo que hace por defecto
-    //  aunque todo ahora mismo esta funcionando ok
+    // ahora mismo como esta funciona ok
     await UserModel.insertMany(users);
     await UserRoleModel.insertMany(userRoles);
     await PlaceStateModel.insertMany(placeStates);
