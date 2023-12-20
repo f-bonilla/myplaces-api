@@ -1,8 +1,9 @@
 {
-  "editor.fontSize": 12,
+  "eslint.enable": true,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 0
 }

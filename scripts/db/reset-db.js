@@ -28,13 +28,10 @@ const resetDataBase = async () => {
   }
 };
 
-const preparePlaces = (places, user, state, option, optionType) => {
+const preparePlaces = (places, user) => {
   return places.map((place) => ({
     ...place,
     user: user,
-    state: state,
-    place_option: option,
-    place_option_type: optionType,
   }));
 };
 
@@ -56,25 +53,17 @@ const init = async () => {
     await PlaceOptionModel.createIndexes();
     await PlaceOptionTypeModel.createIndexes();
     await PlaceModel.createIndexes();
-    // TODO: ver si da igual guardar todo el objeto o solo el id...aclarar como funciona esto, lo mismo es lo que hace por defecto
-    // ahora mismo como esta funciona ok
     await UserModel.insertMany(users);
     await UserRoleModel.insertMany(userRoles);
     await PlaceStateModel.insertMany(placeStates);
     await PlaceOptionModel.insertMany(placeOptions);
     await PlaceOptionTypeModel.insertMany(placeOptionTypes);
     const firstUser = await getFirstDoc(UserModel);
-    const firstPlaceState = await getFirstDoc(PlaceStateModel);
-    const firstPlaceOption = await getFirstDoc(PlaceOptionModel);
-    const firstPlaceOptionType = await getFirstDoc(PlaceOptionTypeModel);
     await PlaceModel.insertMany(
       // update json fields to valid ObjectId
       preparePlaces(
         places,
         firstUser,
-        firstPlaceState,
-        firstPlaceOption,
-        firstPlaceOptionType,
       ),
     );
     console.log("done!");

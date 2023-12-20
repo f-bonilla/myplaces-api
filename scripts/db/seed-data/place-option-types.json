@@ -15,7 +15,7 @@
     "_id": "65795e0559d98303b988a6c7",
     "parent_id": "65795e0559d98303b988a6c0",
     "key": "10003",
-    "value": "ruralHouse"
+    "value": "rural_house"
   },
   {
     "_id": "65795e0559d98303b988a6c8",
@@ -51,13 +51,13 @@
     "_id": "65795e0559d98303b988a6cd",
     "parent_id": "65795e0559d98303b988a6c2",
     "key": "30001",
-    "value": "streetMarket"
+    "value": "street_market"
   },
   {
     "_id": "65795e0559d98303b988a6ce",
     "parent_id": "65795e0559d98303b988a6c2",
     "key": "30002",
-    "value": "localFestivals"
+    "value": "local_festivals"
   },
   {
     "_id": "65795e0559d98303b988a6cf",
@@ -69,19 +69,19 @@
     "_id": "65795e0559d98303b988a6d0",
     "parent_id": "65795e0559d98303b988a6c2",
     "key": "30004",
-    "value": "localFairs"
+    "value": "local_fairs"
   },
   {
     "_id": "65795e0559d98303b988a6d1",
     "parent_id": "65795e0559d98303b988a6c3",
     "key": "40001",
-    "value": "swimmingAreas"
+    "value": "swimming_areas"
   },
   {
     "_id": "65795e0559d98303b988a6d2",
     "parent_id": "65795e0559d98303b988a6c3",
     "key": "40002",
-    "value": "outdoorActivities"
+    "value": "outdoor_activities"
   },
   {
     "_id": "65795e0559d98303b988a6d3",
@@ -93,7 +93,7 @@
     "_id": "65795e0559d98303b988a6d4",
     "parent_id": "65795e0559d98303b988a6c3",
     "key": "40004",
-    "value": "historicSites"
+    "value": "historic_sites"
   },
   {
     "_id": "65795e0559d98303b988a6d5",

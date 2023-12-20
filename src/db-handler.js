@@ -11,8 +11,6 @@ const dbConnect = async (url) => {
   while (!connected && connectionAttempts < maxConnectionAttempts) {
     try {
       await mongoose.connect(url, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
         serverSelectionTimeoutMS: 2500, // connection timeout
         autoIndex: false, // Set autoIndex to false to avoid creating the database if it doesn't exist
       });
