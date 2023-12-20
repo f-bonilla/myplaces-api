@@ -41,8 +41,8 @@ const getPlaceData = () => {
     state: generateObjectId(),
     province: "901",
     locality: "857",
-    place_option: generateObjectId(),
-    place_option_type: generateObjectId(),
+    option: generateObjectId(),
+    option_type: generateObjectId(),
     public: false,
     votes: 1,
   };

@@ -21,12 +21,12 @@ const placeSchema = new mongoose.Schema(
     },
     province: { type: String, required: true },
     locality: { type: String, required: true },
-    place_option: {
+    option: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "PlaceOption",
       required: true,
     },
-    place_option_type: {
+    option_type: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "PlaceOptionType",
       required: true,

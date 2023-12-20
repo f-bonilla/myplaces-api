@@ -1,4 +1,4 @@
-const document = require("./place-state-model");
+const document = require("./option-model");
 
 const executeList = async (filter = {}) => {
   const collection = await document.find(filter);
@@ -9,6 +9,8 @@ const executeList = async (filter = {}) => {
   }));
 };
 const list = async (req, res, next) => {
+  console.log("PLACE OPTION", "LIST");
+
   const filter = req.body.filter ? JSON.parse(req.body.filter) : {};
   try {
     const collection = await executeList(filter);

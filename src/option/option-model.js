@@ -8,8 +8,4 @@ const placeOptionSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-module.exports = mongoose.model(
-  "PlaceOption",
-  placeOptionSchema,
-  "place_options",
-);
+module.exports = mongoose.model("PlaceOption", placeOptionSchema, "options");

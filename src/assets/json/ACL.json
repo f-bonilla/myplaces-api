@@ -29,13 +29,13 @@
     "patch": ["user", "admin"],
     "delete": ["user", "admin"]
   },
-  "/place-options": {
+  "/options": {
     "get": ["guest", "user"]
   },
-  "/place-option-types": {
+  "/option-types": {
     "get": ["guest", "user"]
   },
-  "/place-states": {
+  "/states": {
     "get": ["guest", "user"]
   }
 }

@@ -8,4 +8,4 @@ const placeStateSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-module.exports = mongoose.model("PlaceState", placeStateSchema, "place_states");
+module.exports = mongoose.model("PlaceState", placeStateSchema, "states");

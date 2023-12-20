@@ -13,9 +13,9 @@ const auth = require("./auth/auth-handler");
 const authRoutes = require("./auth/auth-routes");
 const languageRoutes = require("./language/language-routes");
 const placeRoutes = require("./place/place-routes");
-const placeOptionRoutes = require("./place-option/place-option-routes");
-const placeOptionTypeRoutes = require("./place-option-type/place-option-type-routes");
-const placeStateRoutes = require("./place-state/place-state-routes");
+const placeOptionRoutes = require("./option/option-routes");
+const placeOptionTypeRoutes = require("./option-type/option-type-routes");
+const placeStateRoutes = require("./state/state-routes");
 const userRoutes = require("./user/user-routes");
 
 let app = express();
@@ -47,9 +47,9 @@ const createApp = async () => {
   app.use("/auth", authRoutes);
   app.use("/users", userRoutes);
   app.use("/places", placeRoutes);
-  app.use("/place-options", placeOptionRoutes);
-  app.use("/place-option-types", placeOptionTypeRoutes);
-  app.use("/place-states", placeStateRoutes);
+  app.use("/options", placeOptionRoutes);
+  app.use("/option-types", placeOptionTypeRoutes);
+  app.use("/states", placeStateRoutes);
   app.use("/languages", languageRoutes);
 
   app.use("*", handleMongoError, handleGenericError);

@@ -1,4 +1,4 @@
-const document = require("./place-option-type-model");
+const document = require("./option-type-model");
 
 const executeList = async (filter = {}) => {
   const collection = await document.find(filter);
