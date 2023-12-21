@@ -4,6 +4,9 @@ This is a API RESTful built with Node.js and Express that allows users to perfor
 
 # TODO:
 
+- falta que cuando este en produccion envie el correo de verdad
+  ver si hay algo en los ficheros .env
+
 <API>
 - documentar que los datos para options, option-types, etc...se tiene que encargar el front de recuperarlos y usarlos a su antojo
   esto es por no hacer peticiones, guardar el json directamente, esto lo suyo seria en el proceso de despliegue
@@ -123,20 +126,20 @@ This is a API RESTful built with Node.js and Express that allows users to perfor
 - todos los sitios en activo mas de x tiempo se guardan?
   por tener un listado de sitios que posiblemente sean reales
 - podemos votar los sitios como negativo, esto esto es algo a titulo personal, un sitio por lo
-  que sea no nos gusta mola que quede eso registrado de algun modo, para que por ejemplo no 
+  que sea no nos gusta mola que quede eso registrado de algun modo, para que por ejemplo no
   salga mas en el listado de sitios a no visitar, esto se podria derivar a otra url del tipo:
   boniland.es/places/puaj
-    donde se vea el porque, si alguien quiere rebatir que añada su propia experiencia
-    Una posibilidad es el boton "ocultar", al pulsar este se añade una descripcion de porque 
-    ocultarlo, ya no saldria mas en nuestra lista de places, ademas hay una url publica donde
-    se ven todos los ocultados y el motivo...
-    O tomarlo como una agenda personal y no se nada a conocer, esto tiene su lado negativo claro...
-    Otra opcion, cuando se visita y se pulsa visitado marcar una puntuacion, esta puede ser la "solucion"
-    cuando se llega a un sitio no visitado, al pulsar visitado hay que puntuar:
-      0 - no nos gusto, mala experiencia, lo que sea...
-      1/5 - nos gusto a su nivel
-      en ambos casos comentario descriptivo para explicar el porque.
-    ...
+  donde se vea el porque, si alguien quiere rebatir que añada su propia experiencia
+  Una posibilidad es el boton "ocultar", al pulsar este se añade una descripcion de porque
+  ocultarlo, ya no saldria mas en nuestra lista de places, ademas hay una url publica donde
+  se ven todos los ocultados y el motivo...
+  O tomarlo como una agenda personal y no se nada a conocer, esto tiene su lado negativo claro...
+  Otra opcion, cuando se visita y se pulsa visitado marcar una puntuacion, esta puede ser la "solucion"
+  cuando se llega a un sitio no visitado, al pulsar visitado hay que puntuar:
+  0 - no nos gusto, mala experiencia, lo que sea...
+  1/5 - nos gusto a su nivel
+  en ambos casos comentario descriptivo para explicar el porque.
+  ...
 - privado/publico, en la lista las que sean nuestros se tendrian que distinguir
 - redirigir:
   /places/la-paramera
@@ -147,11 +150,11 @@ This is a API RESTful built with Node.js and Express that allows users to perfor
   https://midominio.com/places/el-establecimiento
   de tal manera que si el-establecimiento existe luego se convierte en:
   https://midominio.com/places/provincia/localidad/donde-comer/el-establecimiento
-    y que cojones pasa si hay varios establecimientos con el mismo nombre???
-    se muestra un listado de los que han aparecido para seleccionar uno??, segun la IA es una buena opcion
-    ademas hay que tener en cuenta esto:
-    Si la estructura de URL corta y amigable, como "midominio.com/places/un-lugar," se mantendrá de manera permanente y no cambiará en el futuro, entonces la redirección 301 (Movido permanentemente) sería la opción más adecuada. Esto indica a los motores de búsqueda que la URL ha cambiado permanentemente, y los motores de búsqueda transferirán la autoridad de búsqueda y las clasificaciones de página a la nueva URL.
-Entonces, en tu caso, puedes utilizar una redirección 301 para indicar que la URL corta y amigable es una característica permanente y que los usuarios deben ser redirigidos a la versión completa y descriptiva, al tiempo que consolidas la autoridad de búsqueda en la nueva URL. Esto es apropiado si la estructura de URL corta y amigable, como "midominio.com/places/un-lugar," no cambiará en el futuro y será una característica constante de tu sitio web.
+  y que cojones pasa si hay varios establecimientos con el mismo nombre???
+  se muestra un listado de los que han aparecido para seleccionar uno??, segun la IA es una buena opcion
+  ademas hay que tener en cuenta esto:
+  Si la estructura de URL corta y amigable, como "midominio.com/places/un-lugar," se mantendrá de manera permanente y no cambiará en el futuro, entonces la redirección 301 (Movido permanentemente) sería la opción más adecuada. Esto indica a los motores de búsqueda que la URL ha cambiado permanentemente, y los motores de búsqueda transferirán la autoridad de búsqueda y las clasificaciones de página a la nueva URL.
+  Entonces, en tu caso, puedes utilizar una redirección 301 para indicar que la URL corta y amigable es una característica permanente y que los usuarios deben ser redirigidos a la versión completa y descriptiva, al tiempo que consolidas la autoridad de búsqueda en la nueva URL. Esto es apropiado si la estructura de URL corta y amigable, como "midominio.com/places/un-lugar," no cambiará en el futuro y será una característica constante de tu sitio web.
 - hara falta en el front lo mismo/seguramente un menu para ver los sitios:
   mios - todos - mas votados
 - si a un usuario le caduca el token no podria acceder al listado /places/mine
