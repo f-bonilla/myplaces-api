@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const placeStateSchema = new mongoose.Schema(
   {
-    key: { type: String, unique: true },
+    category_id: { type: String, unique: true },
     value: { type: String, unique: true },
   },
   { timestamps: true },

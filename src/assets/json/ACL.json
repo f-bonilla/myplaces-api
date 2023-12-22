@@ -1,41 +1,46 @@
 {
+  "HELP": "User role id types in UserRoleModel",
   "/auth/login": {
-    "post": ["guest"]
+    "post": ["6585401c4418a827c7f5ffe8"]
   },
   "/auth/register": {
-    "post": ["guest"]
+    "post": ["6585401c4418a827c7f5ffe8"]
   },
   "/auth/logout": {
-    "post": ["user"]
+    "post": ["658540644418a827c7f5ffe9"]
   },
   "/auth/confirm-user": {
-    "get": ["guest"]
+    "get": ["6585401c4418a827c7f5ffe8"]
   },
   "/users": {
-    "get": ["admin"],
-    "post": ["admin"]
+    "get": ["6585406c4418a827c7f5ffea"],
+    "post": ["6585406c4418a827c7f5ffea"]
   },
   "/users/:id": {
-    "get": ["user", "admin"],
-    "patch": ["user", "admin"],
-    "delete": ["user", "admin"]
+    "get": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"],
+    "patch": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"],
+    "delete": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"]
   },
   "/places": {
-    "get": ["guest", "user"],
-    "post": ["user"]
+    "get": ["6585401c4418a827c7f5ffe8", "658540644418a827c7f5ffe9"],
+    "post": ["658540644418a827c7f5ffe9"]
   },
   "/places/:id": {
-    "get": ["guest", "user", "admin"],
-    "patch": ["user", "admin"],
-    "delete": ["user", "admin"]
+    "get": [
+      "6585401c4418a827c7f5ffe8",
+      "658540644418a827c7f5ffe9",
+      "6585406c4418a827c7f5ffea"
+    ],
+    "patch": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"],
+    "delete": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"]
   },
   "/options": {
-    "get": ["guest", "user"]
+    "get": ["6585401c4418a827c7f5ffe8", "658540644418a827c7f5ffe9"]
   },
   "/option-types": {
-    "get": ["guest", "user"]
+    "get": ["6585401c4418a827c7f5ffe8", "658540644418a827c7f5ffe9"]
   },
   "/states": {
-    "get": ["guest", "user"]
+    "get": ["6585401c4418a827c7f5ffe8", "658540644418a827c7f5ffe9"]
   }
 }

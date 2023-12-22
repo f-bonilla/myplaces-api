@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const mongoose = require("mongoose");
 const { loadNodeEnv } = require("../../src/utils");
-const UserRoleModel = require("../../src/user/user-model-role");
+const UserRoleModel = require("../../src/user/user-role-model");
 
 loadNodeEnv();
 

@@ -14,7 +14,11 @@ const userSchema = new mongoose.Schema(
       },
     },
     password: { type: String, required: true },
-    role: { type: String, required: true },
+    role: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "UserRole",
+      required: true,
+    },
     welcome_email: { type: Boolean, required: true },
     token: String,
   },

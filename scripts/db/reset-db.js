@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { loadNodeEnv } = require("../../src/env-handler");
 const UserModel = require("../../src/user/user-model");
-const UserRoleModel = require("../../src/user/user-model-role");
+const UserRoleModel = require("../../src/user/user-role-model");
 const PlaceModel = require("../../src/place/place-model");
 const PlaceStateModel = require("../../src/state/state-model");
 const PlaceOptionModel = require("../../src/option/option-model");

@@ -1,22 +1,22 @@
 [
   {
     "_id": "65795e0559d98303b988a6c0",
-    "key": "10",
+    "category_id": "10",
     "value": "rest"
   },
   {
     "_id": "65795e0559d98303b988a6c1",
-    "key": "20",
+    "category_id": "20",
     "value": "bar"
   },
   {
     "_id": "65795e0559d98303b988a6c2",
-    "key": "30",
+    "category_id": "30",
     "value": "events"
   },
   {
     "_id": "65795e0559d98303b988a6c3",
-    "key": "40",
+    "category_id": "40",
     "value": "attractions"
   }
 ]

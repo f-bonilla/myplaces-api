@@ -1,17 +1,17 @@
 [
   {
     "_id": "65795e0559d98303b988a6bc",
-    "key": "10",
+    "category_id": "10",
     "value": "visited"
   },
   {
     "_id": "65795e0559d98303b988a6bd",
-    "key": "15",
+    "category_id": "15",
     "value": "wishlist"
   },
   {
     "_id": "65795e0559d98303b988a6be",
-    "key": "20",
+    "category_id": "20",
     "value": "unknow"
   }
 ]

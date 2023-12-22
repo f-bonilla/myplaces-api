@@ -90,7 +90,7 @@ const checkUserRole = (req, res, next) => {
   } else {
     if (req.error) {
       console.log("error", JSON.stringify(req.error));
-      console.log("user", JSON.stringify(req.user));
+      console.log("user", JSON.stringify(user));
       console.log("resource", resource);
       console.log("acl[resource][method]", acl[resource][method]);
     }

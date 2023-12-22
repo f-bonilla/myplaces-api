@@ -1,104 +1,104 @@
 [
   {
     "_id": "65795e0559d98303b988a6c5",
-    "parent_id": "65795e0559d98303b988a6c0",
-    "key": "10001",
-    "value": "hotel"    
+    "parent_category": "65795e0559d98303b988a6c0",
+    "category_id": "10001",
+    "value": "hotel"
   },
   {
     "_id": "65795e0559d98303b988a6c6",
-    "parent_id": "65795e0559d98303b988a6c0",
-    "key": "10002",
+    "parent_category": "65795e0559d98303b988a6c0",
+    "category_id": "10002",
     "value": "camping"
   },
   {
     "_id": "65795e0559d98303b988a6c7",
-    "parent_id": "65795e0559d98303b988a6c0",
-    "key": "10003",
+    "parent_category": "65795e0559d98303b988a6c0",
+    "category_id": "10003",
     "value": "rural_house"
   },
   {
     "_id": "65795e0559d98303b988a6c8",
-    "parent_id": "65795e0559d98303b988a6c0",
-    "key": "10004",
+    "parent_category": "65795e0559d98303b988a6c0",
+    "category_id": "10004",
     "value": "hostel"
   },
   {
     "_id": "65795e0559d98303b988a6c9",
-    "parent_id": "65795e0559d98303b988a6c1",
-    "key": "20001",
+    "parent_category": "65795e0559d98303b988a6c1",
+    "category_id": "20001",
     "value": "restaurant"
   },
   {
     "_id": "65795e0559d98303b988a6ca",
-    "parent_id": "65795e0559d98303b988a6c1",
-    "key": "20002",
+    "parent_category": "65795e0559d98303b988a6c1",
+    "category_id": "20002",
     "value": "pizzeria"
   },
   {
     "_id": "65795e0559d98303b988a6cb",
-    "parent_id": "65795e0559d98303b988a6c1",
-    "key": "20003",
+    "parent_category": "65795e0559d98303b988a6c1",
+    "category_id": "20003",
     "value": "burguer"
   },
   {
     "_id": "65795e0559d98303b988a6cc",
-    "parent_id": "65795e0559d98303b988a6c1",
-    "key": "20004",
+    "parent_category": "65795e0559d98303b988a6c1",
+    "category_id": "20004",
     "value": "pub"
   },
   {
     "_id": "65795e0559d98303b988a6cd",
-    "parent_id": "65795e0559d98303b988a6c2",
-    "key": "30001",
+    "parent_category": "65795e0559d98303b988a6c2",
+    "category_id": "30001",
     "value": "street_market"
   },
   {
     "_id": "65795e0559d98303b988a6ce",
-    "parent_id": "65795e0559d98303b988a6c2",
-    "key": "30002",
+    "parent_category": "65795e0559d98303b988a6c2",
+    "category_id": "30002",
     "value": "local_festivals"
   },
   {
     "_id": "65795e0559d98303b988a6cf",
-    "parent_id": "65795e0559d98303b988a6c2",
-    "key": "30003",
+    "parent_category": "65795e0559d98303b988a6c2",
+    "category_id": "30003",
     "value": "music"
   },
   {
     "_id": "65795e0559d98303b988a6d0",
-    "parent_id": "65795e0559d98303b988a6c2",
-    "key": "30004",
+    "parent_category": "65795e0559d98303b988a6c2",
+    "category_id": "30004",
     "value": "local_fairs"
   },
   {
     "_id": "65795e0559d98303b988a6d1",
-    "parent_id": "65795e0559d98303b988a6c3",
-    "key": "40001",
+    "parent_category": "65795e0559d98303b988a6c3",
+    "category_id": "40001",
     "value": "swimming_areas"
   },
   {
     "_id": "65795e0559d98303b988a6d2",
-    "parent_id": "65795e0559d98303b988a6c3",
-    "key": "40002",
+    "parent_category": "65795e0559d98303b988a6c3",
+    "category_id": "40002",
     "value": "outdoor_activities"
   },
   {
     "_id": "65795e0559d98303b988a6d3",
-    "parent_id": "65795e0559d98303b988a6c3",
-    "key": "40003",
+    "parent_category": "65795e0559d98303b988a6c3",
+    "category_id": "40003",
     "value": "wineries"
   },
   {
     "_id": "65795e0559d98303b988a6d4",
-    "parent_id": "65795e0559d98303b988a6c3",
-    "key": "40004",
+    "parent_category": "65795e0559d98303b988a6c3",
+    "category_id": "40004",
     "value": "historic_sites"
   },
   {
     "_id": "65795e0559d98303b988a6d5",
-    "parent_id": "65795e0559d98303b988a6c3",
-    "key": "40005",
+    "parent_category": "65795e0559d98303b988a6c3",
+    "category_id": "40005",
     "value": "museums"
   }
 ]
