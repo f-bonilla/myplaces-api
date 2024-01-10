@@ -14,7 +14,7 @@ module.exports = {
   externals: [nodeExternals()],
   output: {
     filename: "server.min.js",
-    path: path.resolve(__dirname, "dist", "src"),
+    path: path.resolve(__dirname, "dist"),
   },
   plugins: [
     new CleanWebpackPlugin({
@@ -23,7 +23,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: "src/assets", to: path.resolve(__dirname, "dist", "assets") },
-        { from: "src/config.json", to: path.resolve(__dirname, "dist", "src") },
+        { from: "src/config.json", to: path.resolve(__dirname, "dist") },
       ],
     }),
     {
