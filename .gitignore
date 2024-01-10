@@ -5,4 +5,5 @@ dist
 .env.development
 .env.production
 .env.test
-
+TASKS.md
+scripts
