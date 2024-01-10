@@ -4,7 +4,6 @@ const executeList = async (filter = {}) => {
   const collection = await document.find(filter);
   return collection.map((doc) => ({
     id: doc._id,
-    category_id: doc.category_id,
     label: doc.label,
   }));
 };
