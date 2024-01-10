@@ -22,7 +22,7 @@ describe("/users controller crud", () => {
           email: email,
           password: password,
           welcome_email: true,
-          role: constants.GUEST,
+          role: constants.user.roles.GUEST,
         },
       });
       response = {

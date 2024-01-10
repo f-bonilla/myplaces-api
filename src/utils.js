@@ -1,3 +1,12 @@
+const constants = require("./constants");
+
+const getRoleNameByRoleId = (userRoleId) => {
+  const [roleName, roleId] = Object.entries(constants.user.roles).find(
+    (entry) => userRoleId === entry[1],
+  );
+  return roleName;
+};
+
 const validateEmail = (value) =>
   /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(value);
 
@@ -42,4 +51,4 @@ const notations = {
   },
 };
 
-module.exports = { validateEmail, notations };
+module.exports = { getRoleNameByRoleId, validateEmail, notations };

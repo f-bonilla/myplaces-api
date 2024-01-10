@@ -20,7 +20,7 @@ describe("/auth routes", () => {
       email: email,
       password: password,
       welcome_email: true,
-      role: constants.USER,
+      role: constants.user.roles.USER,
     });
 
     const userUriParts = response.body.user_uri.split("/");
@@ -41,7 +41,7 @@ describe("/auth routes", () => {
       email: email,
       password: password,
       welcome_email: true,
-      role: constants.USER,
+      role: constants.user.roles.USER,
     });
     expect(response.status).toBe(409);
   });
@@ -51,7 +51,7 @@ describe("/auth routes", () => {
       email: "malformed@email",
       password: password,
       welcome_email: true,
-      role: constants.USER,
+      role: constants.user.roles.USER,
     });
     expect(response.status).toBe(400);
   });

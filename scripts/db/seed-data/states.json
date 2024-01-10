@@ -2,16 +2,25 @@
   {
     "_id": "65795e0559d98303b988a6bc",
     "category_id": "10",
-    "value": "visited"
+    "label": {
+      "translated": false,
+      "text": "visited"
+    }
   },
   {
     "_id": "65795e0559d98303b988a6bd",
     "category_id": "15",
-    "value": "wishlist"
+    "label": {
+      "translated": false,
+      "text": "wishlist"
+    }
   },
   {
     "_id": "65795e0559d98303b988a6be",
     "category_id": "20",
-    "value": "unknow"
+    "label": {
+      "translated": false,
+      "text": "unknow"
+    }
   }
 ]

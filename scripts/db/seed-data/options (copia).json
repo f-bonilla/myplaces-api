@@ -1,6 +1,8 @@
 [
   {
     "_id": "65795e0559d98303b988a6c0",
+    "category_id": "10",
+    "parent_category": "final",
     "label": {
       "translated": false,
       "text": "rest"
@@ -8,6 +10,8 @@
   },
   {
     "_id": "65795e0559d98303b988a6c1",
+    "category_id": "20",
+    "parent_category": "final",
     "label": {
       "translated": false,
       "text": "bar"
@@ -15,6 +19,8 @@
   },
   {
     "_id": "65795e0559d98303b988a6c2",
+    "category_id": "30",
+    "parent_category": "final",
     "label": {
       "translated": false,
       "text": "events"
@@ -22,6 +28,8 @@
   },
   {
     "_id": "65795e0559d98303b988a6c3",
+    "category_id": "40",
+    "parent_category": "final",
     "label": {
       "translated": false,
       "text": "attractions"

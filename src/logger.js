@@ -1,5 +1,7 @@
 const fs = require("fs");
 const morgan = require("morgan");
+const constants = require("./constants");
+const { getRoleNameByRoleId } = require("./utils");
 
 const anonymizeIP = (ip) => {
   let maskedUrl = null;
@@ -48,6 +50,7 @@ const getRefererUrl = (req) => {
 };
 
 const logger = (req, res, next) => {
+  // TODO: change "test" by "constants.NODE_ENV_TEST" (EG)
   if (process.env.NODE_ENV !== "test") {
     let log = console.log;
     let color = colors["white"];
@@ -71,7 +74,7 @@ const logger = (req, res, next) => {
         "Warning(2): Response without message";
       const refererUrl = getRefererUrl(req);
       const remoteIP = anonymizeIP(getIP(req));
-      const userRole = req.user.role;
+      const userRole = getRoleNameByRoleId(req.user.role);
       log(
         color,
         `${userRole} ${req.protocol.toUpperCase()} ${req.method} ${
@@ -108,7 +111,7 @@ const accessLogger = (req, res, next) => {
     return getRefererUrl(req);
   });
   morgan.token("userRole", (req) => {
-    return req.user.role;
+    return getRoleNameByRoleId(req.user.role);
   });
   morgan(
     ":url\t:protocol\t:method\t:status\t:message\t:localDate\t:response-time ms\t:user-agent\t:refererUrl\t:remoteIP\t:userRole",

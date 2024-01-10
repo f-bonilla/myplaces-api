@@ -43,7 +43,9 @@ const getFirstDoc = async (collection) => {
 const init = async () => {
   console.clear();
   try {
-    await mongoose.connect(process.env.DB_CONNECTION);
+    await mongoose.connect(process.env.DB_CONNECTION, {
+      dbName: process.env.DB_NAME,
+    });
 
     await resetDataBase();
 

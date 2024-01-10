@@ -4,6 +4,7 @@ const path = require("path");
 const jwt = require("jsonwebtoken");
 const constants = require("../constants");
 const createError = require("../error-handler").createError;
+const { getRoleNameByRoleId } = require("../utils");
 
 const formatPathToAclResource = (path) => {
   path = path.replace(/\/+$/, "");
@@ -46,7 +47,7 @@ const validateToken = (token) => {
 const checkSessionToken = (req, res, next) => {
   const authHeader = req.headers.authorization;
   const authToken = authHeader ? authHeader.split(" ")[1] : null;
-  req.user = { role: constants.GUEST };
+  req.user = { role: constants.user.roles.GUEST };
   try {
     if (authToken) {
       req.user = validateToken(authToken);
@@ -81,9 +82,11 @@ const checkUserRole = (req, res, next) => {
   if (!acl[resource]) return next(createError(404));
 
   const user = req.user;
-  const allowedUser = acl[resource][method].includes(user.role);
+  const allowedUser = acl[resource][method].includes(
+    getRoleNameByRoleId(user.role),
+  );
   const sessionError = req.error;
-  if (user.role === constants.GUEST && allowedUser) {
+  if (user.role === constants.user.roles.GUEST && allowedUser) {
     next();
   } else if (allowedUser && !sessionError) {
     next();

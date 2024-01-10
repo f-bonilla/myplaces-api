@@ -6,12 +6,6 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const outputPath = path.resolve(__dirname, "dist/logs");
 
-/* function createEmptyDirectory() {
-  if (!fs.existsSync(outputPath)) {
-    fs.mkdirSync(outputPath);
-  }
-} */
-
 module.exports = {
   mode: "production",
   entry: "./src/server.js",
@@ -26,13 +20,7 @@ module.exports = {
       patterns: [
         { from: "src/assets", to: "assets" },
         { from: "src/config.json", to: "config.json" },
-        { from: "package.json", to: "package.json" },
-        { from: ".env", to: ".env" },
       ],
-    }),
-    new webpack.EnvironmentPlugin({
-      NODE_ENV: "development",
-      DEBUG: false,
     }),
     {
       apply: (compiler) => {

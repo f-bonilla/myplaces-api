@@ -23,7 +23,7 @@ describe("/places controller crud", () => {
       email: email,
       password: password,
       welcome_email: true,
-      role: constants.USER,
+      role: constants.user.roles.USER,
     });
 
     const userUriParts = response.body.user_uri.split("/");

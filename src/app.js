@@ -24,7 +24,7 @@ const createApp = async () => {
   i18nConfigure();
   app.use(i18n.init);
   auth.loadPermissions();
-  await dbConnect(process.env.DB_CONNECTION);
+  await dbConnect(process.env.DB_CONNECTION, process.env.DB_NAME);
   app.set("trust proxy", true);
   app.use(
     cors({
@@ -32,7 +32,9 @@ const createApp = async () => {
       origin: [
         "http://127.0.0.1:64053",
         "http://localhost:9000",
+        "http://127.0.0.1:9000",
         "http://192.168.1.35:9000",
+        "https://myplaces.boniland.es",
       ],
     }),
   );

@@ -5,12 +5,10 @@ const executeList = async (filter = {}) => {
   return collection.map((doc) => ({
     id: doc._id,
     category_id: doc.category_id,
-    value: doc.value,
+    label: doc.label,
   }));
 };
 const list = async (req, res, next) => {
-  console.log("PLACE OPTION", "LIST");
-
   const filter = req.body.filter ? JSON.parse(req.body.filter) : {};
   try {
     const collection = await executeList(filter);

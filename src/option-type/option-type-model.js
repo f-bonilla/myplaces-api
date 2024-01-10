@@ -2,13 +2,15 @@ const mongoose = require("mongoose");
 
 const placeOptionTypeSchema = new mongoose.Schema(
   {
-    parent_category: {
+    parent_id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "PlaceOption",
       required: true,
     },
-    category_id: { type: String, unique: true },
-    value: { type: String, unique: true },
+    label: {
+      translated: { type: Boolean },
+      text: { type: String, unique: true }, // Hacer 'text' único
+    },
   },
   { timestamps: true },
 );

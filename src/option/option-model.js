@@ -2,8 +2,10 @@ const mongoose = require("mongoose");
 
 const placeOptionSchema = new mongoose.Schema(
   {
-    category_id: { type: String, unique: true },
-    value: { type: String, unique: true },
+    label: {
+      translated: { type: Boolean },
+      text: { type: String, unique: true },
+    },
   },
   { timestamps: true },
 );

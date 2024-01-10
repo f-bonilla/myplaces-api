@@ -1,7 +1,7 @@
 {
-  "name": "learning-node-mongodb",
+  "name": "my-places-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "api for myplaces site",
   "main": "./src/server.js",
   "scripts": {
     "start": "node ./src/server.js",

@@ -6,6 +6,8 @@ const UserRoleModel = require("../../src/user/user-role-model");
 
 loadNodeEnv();
 
+// NOTE: outdated
+
 (async () => {
   try {
     await mongoose.connect(process.env.DB_CONNECTION, {

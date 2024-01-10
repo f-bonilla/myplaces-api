@@ -4,7 +4,7 @@ const constants = require("./constants");
 
 let state = 0;
 
-const dbConnect = async (url) => {
+const dbConnect = async (url, dbName) => {
   let connected = false;
   let connectionAttempts = 0;
   const maxConnectionAttempts = 3;
@@ -13,6 +13,7 @@ const dbConnect = async (url) => {
       await mongoose.connect(url, {
         serverSelectionTimeoutMS: 2500, // connection timeout
         autoIndex: false, // Set autoIndex to false to avoid creating the database if it doesn't exist
+        dbName: dbName,
       });
       mongoose.set("bufferTimeoutMS", 10000); // request timeout (default value: 10000)
       connected = true;
@@ -28,7 +29,7 @@ const checkDatabaseConnection = (() => {
   return (req, res, next) => {
     if (state === 0) {
       // logger.js needs this object to print errors
-      req.user = { role: constants.GUEST };
+      req.user = { role: constants.user.roles.GUEST };
       return next(createError(503));
     }
     next();

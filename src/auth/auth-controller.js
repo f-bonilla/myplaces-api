@@ -18,7 +18,7 @@ const sendWelcomeEmail = async (email, token) => {
   return !(emailSent instanceof Error);
 };
 
-const isUser = (role) => role !== constants.GUEST;
+const isUser = (role) => role !== constants.user.roles.GUEST;
 const userConfirmed = (res, user) => {
   return user.token && isUser(user.role)
     ? additionalResponseData.add(
@@ -72,7 +72,7 @@ const register = async (req, res, next) => {
     req.body = {
       email: email,
       password: encryptedPassword,
-      role: role || constants.USER,
+      role: role || constants.user.roles.USER,
       welcome_email: false,
     };
     const user = await UserController.executeCreate(req, res, next);
@@ -90,7 +90,7 @@ const register = async (req, res, next) => {
 };
 
 const logout = (req, res) => {
-  req.user = { role: constants.GUEST };
+  req.user = { role: constants.user.roles.GUEST };
   res.status(204).end();
 };
 

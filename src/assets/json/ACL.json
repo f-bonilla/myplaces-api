@@ -1,46 +1,42 @@
 {
-  "HELP": "User role id types in UserRoleModel",
+  "HELP": "GUEST/USER/ADMIN values in constants.js",
   "/auth/login": {
-    "post": ["6585401c4418a827c7f5ffe8"]
+    "post": ["GUEST"]
   },
   "/auth/register": {
-    "post": ["6585401c4418a827c7f5ffe8"]
+    "post": ["GUEST"]
   },
   "/auth/logout": {
-    "post": ["658540644418a827c7f5ffe9"]
+    "post": ["USER"]
   },
   "/auth/confirm-user": {
-    "get": ["6585401c4418a827c7f5ffe8"]
+    "get": ["GUEST"]
   },
   "/users": {
-    "get": ["6585406c4418a827c7f5ffea"],
-    "post": ["6585406c4418a827c7f5ffea"]
+    "get": ["ADMIN"],
+    "post": ["ADMIN"]
   },
   "/users/:id": {
-    "get": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"],
-    "patch": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"],
-    "delete": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"]
+    "get": ["USER", "ADMIN"],
+    "patch": ["USER", "ADMIN"],
+    "delete": ["USER", "ADMIN"]
   },
   "/places": {
-    "get": ["6585401c4418a827c7f5ffe8", "658540644418a827c7f5ffe9"],
-    "post": ["658540644418a827c7f5ffe9"]
+    "get": ["GUEST", "USER"],
+    "post": ["USER"]
   },
   "/places/:id": {
-    "get": [
-      "6585401c4418a827c7f5ffe8",
-      "658540644418a827c7f5ffe9",
-      "6585406c4418a827c7f5ffea"
-    ],
-    "patch": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"],
-    "delete": ["658540644418a827c7f5ffe9", "6585406c4418a827c7f5ffea"]
+    "get": ["GUEST", "USER", "ADMIN"],
+    "patch": ["USER", "ADMIN"],
+    "delete": ["USER", "ADMIN"]
   },
   "/options": {
-    "get": ["6585401c4418a827c7f5ffe8", "658540644418a827c7f5ffe9"]
+    "get": ["GUEST", "USER"]
   },
   "/option-types": {
-    "get": ["6585401c4418a827c7f5ffe8", "658540644418a827c7f5ffe9"]
+    "get": ["GUEST", "USER"]
   },
   "/states": {
-    "get": ["6585401c4418a827c7f5ffe8", "658540644418a827c7f5ffe9"]
+    "get": ["GUEST", "USER"]
   }
 }
