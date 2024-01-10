@@ -3,6 +3,7 @@ const fs = require("fs");
 const webpack = require("webpack");
 const nodeExternals = require("webpack-node-externals");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const outputPath = path.resolve(__dirname, "dist/logs");
 
@@ -13,13 +14,16 @@ module.exports = {
   externals: [nodeExternals()],
   output: {
     filename: "server.min.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist", "src"),
   },
   plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, "dist")],
+    }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "src/assets", to: "assets" },
-        { from: "src/config.json", to: "config.json" },
+        { from: "src/assets", to: path.resolve(__dirname, "dist", "assets") },
+        { from: "src/config.json", to: path.resolve(__dirname, "dist", "src") },
       ],
     }),
     {
