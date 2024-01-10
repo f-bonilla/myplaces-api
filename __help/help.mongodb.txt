@@ -1,3 +1,0 @@
-- para exportar/importar una db mongo(vale tambien para mongodb.com):
-  mongodump --db database_name --out /path/to/output/directory
-  mongorestore --db database_name /path/to/output/directory/database_name
