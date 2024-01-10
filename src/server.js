@@ -2,7 +2,6 @@ const i18n = require("i18n");
 const { getIpAddress } = require("./network");
 const createApp = require("./app");
 
-console.clear();
 createApp().then((app) => {
   const PORT = parseInt(process.env.PORT, 10) || 3000;
   app.listen(PORT, () => {

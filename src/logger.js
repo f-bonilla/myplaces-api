@@ -50,7 +50,6 @@ const getRefererUrl = (req) => {
 };
 
 const logger = (req, res, next) => {
-  // TODO: change "test" by "constants.NODE_ENV_TEST" (EG)
   if (process.env.NODE_ENV !== "test") {
     let log = console.log;
     let color = colors["white"];

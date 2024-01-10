@@ -27,10 +27,9 @@ const read = async (req, res, next) => {
   }
 };
 
-// NOTE: no used
-const executeUpdate = async () => {
-  // ...
-};
+// NOTE: it is necessary?
+const executeUpdate = async () => {};
+
 const update = async (req, res, next) => {
   try {
     const { id } = req.params;

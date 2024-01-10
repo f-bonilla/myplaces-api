@@ -20,9 +20,6 @@ const create = async (req, res, next) => {
 const executeRead = async (filter) => await document.findOne(filter);
 const read = async (req, res, next) => {
   try {
-    // TODO: y ademas todas las de nuestra propiedad, en el front habra que poner en un place el nombre de usuario
-    //  el parametro id puede que sea el nombre de un place, en este caso hay que controlar si es un ObjectId valido
-    //  para hacer la busqueda por id y en caso contrario hacerlo por name
     const doc = await executeRead({ _id: req.params.id, public: true });
     if (!doc) return next(createError(404));
     res.status(200).json(doc);
@@ -31,10 +28,9 @@ const read = async (req, res, next) => {
   }
 };
 
-// NOTE: no used
-const executeUpdate = async () => {
-  // ...
-};
+// NOTE: it is necessary?
+const executeUpdate = async () => {};
+
 const update = async (req, res, next) => {
   try {
     const { id } = req.params;

@@ -21,7 +21,7 @@ const getPlaceHolders = (templateType, templateOptions) => {
         headContent: i18n.__(`mailing.views.${templateType}.head_content`),
         bodyContent: i18n.__(
           `mailing.views.${templateType}.body_content`,
-          `http://127.0.0.1:3000/auth/confirm-user?token=${templateOptions[templateType].token}`,
+          `${process.env.MAILING_CONFIRM_EMAIL_URL}/auth/confirm-user?token=${templateOptions[templateType].token}`,
         ),
         contactContent: i18n.__(
           `mailing.views.${templateType}.contact_content`,
@@ -50,9 +50,8 @@ const send = async (emailData, templateType = "default") => {
   });
   const html = ejs.render(template, templateOptions);
   const mailOptions = {
-    from: `boniland.es <${process.env.MAILING_USER}>`,
-    // ferhack: necesitamos esto para que se produza el registro, en produccion to seria el
-    //  email con el que te registras y como no permite duplicados pues eso
+    from: `${process.env.MAILING_MAIL_FROM} <${process.env.MAILING_USER}>`,
+    // NOTE: At the moment you need to do this like this to test locally
     to: "oswald.hickle52@ethereal.email" || emailData.to,
     subject: i18n.__(`mailing.views.${templateType}.subject`),
     html: html,

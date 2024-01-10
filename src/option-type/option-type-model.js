@@ -9,7 +9,7 @@ const placeOptionTypeSchema = new mongoose.Schema(
     },
     label: {
       translated: { type: Boolean },
-      text: { type: String, unique: true }, // Hacer 'text' único
+      text: { type: String, unique: true },
     },
   },
   { timestamps: true },
