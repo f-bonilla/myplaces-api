@@ -8,13 +8,7 @@ createApp().then((app) => {
     const ipAddress = getIpAddress();
     console.log("\n\n-------------------------------------------");
     console.log(`${i18n.__("server")} ${ipAddress}:${PORT}`);
-    console.log(
-      `${i18n.__("database")} ${
-        process.env.DB_CONNECTION.indexOf("localhost") === -1
-          ? "production"
-          : "development"
-      }`,
-    );
+    console.log(`${i18n.__("database")} ${process.env.NODE_ENV}`);
     console.log("-------------------------------------------");
   });
 });

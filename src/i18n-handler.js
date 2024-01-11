@@ -10,7 +10,7 @@ const i18nConfigure = () => {
     objectNotation: true,
     logWarnFn: (message, defaultMessage, level, meta) => {
       console.warn(`message: ${message}`);
-      console.warn(`defultMessage: ${defaultMessage}`);
+      console.warn(`defaultMessage: ${defaultMessage}`);
       console.warn(`level: ${level}`);
       console.warn(`meta: ${meta}`);
     },

@@ -40,8 +40,11 @@ const createApp = async () => {
   );
   app.use(express.json());
   app.use(bodyParser.urlencoded({ extended: true }));
-  app.use("/assets", express.static("src/assets"));
-  app.use(favicon(path.join(__dirname, "assets", "favicon.ico")));
+  app.use(
+    "/assets",
+    express.static(path.join(__dirname, "..", "src", "assets")),
+  );
+  app.use(favicon(path.join(__dirname, "..", "src", "assets", "favicon.ico")));
   app.use(logger, accessLogger);
   app.use(checkDatabaseConnection);
   app.use(auth.checkSessionToken, auth.checkUserRole);

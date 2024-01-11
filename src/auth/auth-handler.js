@@ -23,7 +23,7 @@ const formatPathToAclResource = (path) => {
 const loadPermissions = () => {
   try {
     const aclData = fs.readFileSync(
-      path.join(__dirname, "../assets/json/", "ACL.json"),
+      path.join(__dirname, "..", process.env.ASSETS_PATH, "json", "ACL.json"),
       "utf8",
     );
     acl = JSON.parse(aclData);
