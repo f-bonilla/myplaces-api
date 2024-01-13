@@ -1,0 +1,366 @@
+[
+  {
+    "id": "01",
+    "label": {
+      "translated": true,
+      "text": "Álava/Araba"
+    }
+  },
+  {
+    "id": "02",
+    "label": {
+      "translated": true,
+      "text": "Albacete"
+    }
+  },
+  {
+    "id": "03",
+    "label": {
+      "translated": true,
+      "text": "Alicante/Alacant"
+    }
+  },
+  {
+    "id": "04",
+    "label": {
+      "translated": true,
+      "text": "Almería"
+    }
+  },
+  {
+    "id": "33",
+    "label": {
+      "translated": true,
+      "text": "Asturias"
+    }
+  },
+  {
+    "id": "05",
+    "label": {
+      "translated": true,
+      "text": "Ávila"
+    }
+  },
+  {
+    "id": "06",
+    "label": {
+      "translated": true,
+      "text": "Badajoz"
+    }
+  },
+  {
+    "id": "07",
+    "label": {
+      "translated": true,
+      "text": "Baleares, Islas/Balears, Illes"
+    }
+  },
+  {
+    "id": "08",
+    "label": {
+      "translated": true,
+      "text": "Barcelona"
+    }
+  },
+  {
+    "id": "48",
+    "label": {
+      "translated": true,
+      "text": "Bizkaia"
+    }
+  },
+  {
+    "id": "09",
+    "label": {
+      "translated": true,
+      "text": "Burgos"
+    }
+  },
+  {
+    "id": "10",
+    "label": {
+      "translated": true,
+      "text": "Cáceres"
+    }
+  },
+  {
+    "id": "11",
+    "label": {
+      "translated": true,
+      "text": "Cádiz"
+    }
+  },
+  {
+    "id": "39",
+    "label": {
+      "translated": true,
+      "text": "Cantabria"
+    }
+  },
+  {
+    "id": "12",
+    "label": {
+      "translated": true,
+      "text": "Castellón/Castelló"
+    }
+  },
+  {
+    "id": "51",
+    "label": {
+      "translated": true,
+      "text": "Ceuta"
+    }
+  },
+  {
+    "id": "13",
+    "label": {
+      "translated": true,
+      "text": "Ciudad Real"
+    }
+  },
+  {
+    "id": "14",
+    "label": {
+      "translated": true,
+      "text": "Córdoba"
+    }
+  },
+  {
+    "id": "15",
+    "label": {
+      "translated": true,
+      "text": "Coruña, A"
+    }
+  },
+  {
+    "id": "16",
+    "label": {
+      "translated": true,
+      "text": "Cuenca"
+    }
+  },
+  {
+    "id": "20",
+    "label": {
+      "translated": true,
+      "text": "Gipuzkoa"
+    }
+  },
+  {
+    "id": "17",
+    "label": {
+      "translated": true,
+      "text": "Girona"
+    }
+  },
+  {
+    "id": "18",
+    "label": {
+      "translated": true,
+      "text": "Granada"
+    }
+  },
+  {
+    "id": "19",
+    "label": {
+      "translated": true,
+      "text": "Guadalajara"
+    }
+  },
+  {
+    "id": "21",
+    "label": {
+      "translated": true,
+      "text": "Huelva"
+    }
+  },
+  {
+    "id": "22",
+    "label": {
+      "translated": true,
+      "text": "Huesca"
+    }
+  },
+  {
+    "id": "23",
+    "label": {
+      "translated": true,
+      "text": "Jaén"
+    }
+  },
+  {
+    "id": "24",
+    "label": {
+      "translated": true,
+      "text": "León"
+    }
+  },
+  {
+    "id": "25",
+    "label": {
+      "translated": true,
+      "text": "Lleida"
+    }
+  },
+  {
+    "id": "27",
+    "label": {
+      "translated": true,
+      "text": "Lugo"
+    }
+  },
+  {
+    "id": "28",
+    "label": {
+      "translated": true,
+      "text": "Madrid"
+    }
+  },
+  {
+    "id": "29",
+    "label": {
+      "translated": true,
+      "text": "Málaga"
+    }
+  },
+  {
+    "id": "52",
+    "label": {
+      "translated": true,
+      "text": "Melilla"
+    }
+  },
+  {
+    "id": "30",
+    "label": {
+      "translated": true,
+      "text": "Murcia"
+    }
+  },
+  {
+    "id": "31",
+    "label": {
+      "translated": true,
+      "text": "Navarra"
+    }
+  },
+  {
+    "id": "32",
+    "label": {
+      "translated": true,
+      "text": "Ourense"
+    }
+  },
+  {
+    "id": "34",
+    "label": {
+      "translated": true,
+      "text": "Palencia"
+    }
+  },
+  {
+    "id": "35",
+    "label": {
+      "translated": true,
+      "text": "Palmas, Las"
+    }
+  },
+  {
+    "id": "36",
+    "label": {
+      "translated": true,
+      "text": "Pontevedra"
+    }
+  },
+  {
+    "id": "26",
+    "label": {
+      "translated": true,
+      "text": "Rioja, La"
+    }
+  },
+  {
+    "id": "37",
+    "label": {
+      "translated": true,
+      "text": "Salamanca"
+    }
+  },
+  {
+    "id": "38",
+    "label": {
+      "translated": true,
+      "text": "Santa Cruz de Tenerife"
+    }
+  },
+  {
+    "id": "40",
+    "label": {
+      "translated": true,
+      "text": "Segovia"
+    }
+  },
+  {
+    "id": "41",
+    "label": {
+      "translated": true,
+      "text": "Sevilla"
+    }
+  },
+  {
+    "id": "42",
+    "label": {
+      "translated": true,
+      "text": "Soria"
+    }
+  },
+  {
+    "id": "43",
+    "label": {
+      "translated": true,
+      "text": "Tarragona"
+    }
+  },
+  {
+    "id": "44",
+    "label": {
+      "translated": true,
+      "text": "Teruel"
+    }
+  },
+  {
+    "id": "45",
+    "label": {
+      "translated": true,
+      "text": "Toledo"
+    }
+  },
+  {
+    "id": "46",
+    "label": {
+      "translated": true,
+      "text": "Valencia/València"
+    }
+  },
+  {
+    "id": "47",
+    "label": {
+      "translated": true,
+      "text": "Valladolid"
+    }
+  },
+  {
+    "id": "49",
+    "label": {
+      "translated": true,
+      "text": "Zamora"
+    }
+  },
+  {
+    "id": "50",
+    "label": {
+      "translated": true,
+      "text": "Zaragoza"
+    }
+  }
+]
