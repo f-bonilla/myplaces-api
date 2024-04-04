@@ -22,12 +22,16 @@ const formatPathToAclResource = (path) => {
 
 const loadPermissions = () => {
   try {
-    console.log("acl path ->", path.join(__dirname, process.env.ASSETS_PATH, "json", "ACL.json"))
+    console.log(
+      "acl path ->",
+      path.join(__dirname, process.env.ASSETS_PATH, "json", "ACL.json"),
+    );
     const aclData = fs.readFileSync(
       path.join(__dirname, process.env.ASSETS_PATH, "json", "ACL.json"),
       "utf8",
     );
     acl = JSON.parse(aclData);
+    console.log(aclData);
   } catch (err) {
     console.log("ERROR LOADING ACL");
     console.log(JSON.stringifyç(err));
