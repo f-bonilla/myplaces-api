@@ -29,6 +29,8 @@ const loadPermissions = () => {
     );
     acl = JSON.parse(aclData);
   } catch (err) {
+    console.log("ERROR LOADING ACL");
+    console.log(JSON.stringifyç(err));
     acl = err;
     acl.message = i18n.__("acc_load_error");
   }
