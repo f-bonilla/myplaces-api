@@ -4,6 +4,7 @@
   "description": "api for myplaces site",
   "main": "./src/server.js",
   "scripts": {
+    "prebuild": "mkdir -p ./dist/logs",
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
     "build": "npm install webpack-cli && webpack --config webpack.config.js --mode production",
@@ -15,6 +16,8 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
@@ -30,8 +33,6 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-node-externals": "^3.0.0",
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^11.0.0",
     "whatwg-url": "^13.0.0"
   },
   "engines": {
