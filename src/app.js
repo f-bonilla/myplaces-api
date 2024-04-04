@@ -45,7 +45,7 @@ const createApp = async () => {
     express.static(path.join(__dirname, "..", "src", "assets")),
   );
   app.use(favicon(path.join(__dirname, "..", "src", "assets", "favicon.ico")));
-  app.use(logger, accessLogger);
+  // app.use(logger, accessLogger);
   app.use(checkDatabaseConnection);
   app.use(auth.checkSessionToken, auth.checkUserRole);
 
