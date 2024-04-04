@@ -7,7 +7,7 @@
     "prebuild": "mkdir -p dist/logs",
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
-    "build": "npm install webpack-cli && webpack --config webpack.config.js --mode production",
+    "build": "webpack --config webpack.config.js --mode production",
     "test": "NODE_ENV=test jest --watch --verbose"
   },
   "keywords": [],
